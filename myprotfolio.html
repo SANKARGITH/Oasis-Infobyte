@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <!-- linking css file -->
+  <link rel="stylesheet" href="myprotfolio.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+    <!-- Add class of bg-light to nav element -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MY-PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- main banner -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/containers/ -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/grid/ -->
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Hi, it's me Sankar</h2>
+                <p class="hero_desc">I am a Full Stack Java Development Trainee.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- about section -->
+    <section class="container mt-4 pt-4 section" id="about">
+        <h1 class="text-center">About Me</h1>
+        
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="images/aboutme.jpg" class="image_about" alt="">
+            </div>
+
+            <div class="col-lg-6">
+                <p> Hello there! I'm Sankar, a passionate and dedicated Full Stack Trainee with an insatiable appetite for all things web development. As an aspiring web developer, I am constantly seeking opportunities to expand my skills and explore the ever-evolving world of technology.
+                    
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>FRONT-END DEVELOPMENT</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <LI>BACK-END DEVELOPMENT</LI>
+                            <li>JAVA</li>
+                            <li>C</li>
+                            <li>PYTHON (AWARENESS)</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <p> My journey into the world of programming began with a curiosity-driven exploration of HTML and CSS, which quickly ignited a deep-seated interest in creating visually appealing and interactive websites. Since then, I've embarked on a mission to become a well-rounded full-stack developer, and I'm eager to share my progress with you.
+                        On the back end, I've been diving into server-side programming and database management. I've been learning the intricacies of popular back-end technologies like Node.js and Python, and I'm excited to apply this knowledge to build robust and scalable web applications. Understanding how data flows and is stored is a puzzle I'm eager to solve.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- services section-->
+    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
+    <section class="container section" id="services">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-6 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Website Development</h4>
+                        <p class="card-text mt-3">Our services encompass front-end and back-end development, ensuring a seamless user experience and robust functionality. From eye-catching user interfaces to powerful server-side logic, we've got your web development needs covered.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">We are your design visionaries, ready to turn your ideas into captivating digital experiences. Our website design services are your gateway to aesthetic, user-friendly, and memorable web solutions. With a keen eye for detail and a passion for creativity, we bring your brand to life online.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Website Deployment</h4>
+                        <p class="card-text mt-3">Bringing your website to the world. Our deployment services ensure a smooth and seamless transition from development to the online realm. We handle the technical intricacies, making sure your website goes live without a hitch. Launch with confidence; we've got your back.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">Back-End Development</h4>
+                        <p class="card-text mt-3">Powering your web presence from behind the scenes. Our back-end development services are the engine that drives your website's functionality. We build secure, scalable, and efficient server-side solutions to make your web applications run smoothly.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">Secure Project</h4>
+                        <p class="card-text mt-3">Your project's safety is our priority. With our secure project handling services, you can trust us to safeguard your sensitive data, code, and intellectual property. We implement robust security measures at every stage to ensure your project remains confidential and protected from external threats. 
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">ON-Delivery</h4>
+                        <p class="card-text mt-3">We understand the value of your time. Our unwavering commitment to punctuality ensures that your projects are delivered as promised. With a well-structured timeline and dedicated team, we make certain that your goals are met promptly, allowing you to stay on track and seize opportunities.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section class="section" id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/amazonclone.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Amazon Static Clone</h4>
+                            <p class="card-text">Experience the convenience and familiarity of the renowned Amazon shopping platform with our Amazon Static Clone. I've recreated the essence of Amazon's user interface and product listings, providing a reliable and efficient shopping experience. </p>
+                            <div class="text-center">
+                                <a href="https://sankargith.github.io/E-commerce/" class="btn btn-success">Demo Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/bigbasketclone.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Big Basket Clone</h4>
+                            <p class="card-text">Introducing our Big Basket Clone - a seamless, user-friendly replica of the popular online grocery platform. Crafted using HTML and CSS, this clone mirrors the intuitive navigation and clean design of Big Basket, making your shopping experience just as convenient and enjoyable.</p>
+                            <div class="text-center">
+                                <a href="https://sankargith.github.io/Bigbasketclone/" class="btn btn-success">Demo Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/agecalculator.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Age Calculator</h4>
+                            <p class="card-text">Age Calculator Clone, a dynamic web tool crafted with HTML, CSS, and JavaScript.This clone allows you to effortlessly determine your age or the age of anyone else by simply inputting their birthdate. </p>
+                            <div class="text-center">
+                                <a href="https://sankargith.github.io/web_pages/AgeCalculator.html" class="btn btn-success">Demo Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/exampaper.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">ExamPaper Clone</h4>
+                            <p class="card-text">Our ExamPaper Clone is a powerful tool crafted with HTML,CSS and JavaScript to replicate the experience of taking an exam digitally. With a user-friendly interface, it allows you to create, customize, and grade exams seamlessly.</p>
+                            <div class="text-center">
+                                <a href="https://sankargith.github.io/CODSOFT/level2(task-5)QuizMaker/exampaper.html" class="btn btn-success">Demo Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/calculator.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Calculator</h4>
+                            <p class="card-text">Experience the convenience of our web-based calculator, meticulously designed with HTML, CSS, and JavaScript. This versatile tool brings the simplicity of a basic calculator to your web browser, enabling you to perform a wide range of mathematical operations with ease.</p>
+                            <div class="text-center">
+                                <a href="https://sankargith.github.io/CODSOFT/level1(task-3)%20Calculator/calculator1.html" class="btn btn-success">Demo Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/analogclock.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Analog Clock</h4>
+                            <p class="card-text">By combining HTML for structure, CSS for styling, and JavaScript for dynamic behavior, you can create a functional and visually appealing analog clock on your web page. It's a great way to practice your front-end development skills and add an interesting feature to your website.</p>
+                            <div class="text-center">
+                                <a href="https://sankargith.github.io/web_pages/" class="btn btn-success">Demo Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!-- contact section-->
+    <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map go to https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15200.970337260967!2d83.3256021883606!3d17.73320543811459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3961a2aa8ac549%3A0xfd4d1a20b7ebcdfb!2sKothavalasa%2C%20Andhra%20Pradesh%20535183!5e0!3m2!1sen!2sin!4v1696777800351!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- footer section-->
+    <footer class="container-fluid footer" id="footer">
+        <!-- social media icons -->
+        <div class="social-icons mt-4 ms-5">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </footer>
+    
+
+    <!-- load javascript after loading all html content -->
+    <script src="myprotfolio.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+<nav class="navbar navbar-expands-lg">
+    <div class="container header d-flex justify-content-between">
+      <div>
+        <a href="#" class="navbar-brand">
+          <div class="logo">
+            <img
+              src="https://beyondlearn.in/wp-content/uploads/2023/04/cropped-cropped-20230418_012459_0000-300x82.png"
+              alt="logoimg"
+              width="180px"
+              height="49px"
+            />
+          </div>
+        </a>
+      </div>
+      <div>
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navlistitems"
+        >
+          <span class="navbar-toggler-icon bg-success"
+            ><img
+              src="https://miro.medium.com/v2/resize:fit:407/1*tLvC3Y8iNNkGm2JjKqmtLg.png"
+              alt=""
+              width="50px"
+              height="40px"
+              style="margin: -5px -0px 0px -10px"
+          /></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="navlistitems">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title">
+              <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ul-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Post an Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
